@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> test04 </title>
+    </head>
+    <body>
+        <h1>폼 만들기</h1>
+        <hr>
+        <h3>4-1</h3>
+        <form method="get"><label>라벨인풋1-get<input></label></form>    
+        <form method="post"><label>라벨인풋2-post<input></label></form>
+
+        <label for="id">라벨</label>
+        <input type="text" id="id">
+
+        <form>
+            <fieldset>
+                <legend>로그인</legend>
+                <ul>
+                    <li>
+                        <label for="id">아이디</label>
+                        <input id="id" type="text">
+                    </li>
+                    <li>
+                        <label for="psw">패스워드</label>
+                        <input id="psw" type="password">
+                    </li>
+                    <li>
+                        <input type="button">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="input1">text </label>
+                        <input type="text" id="input1">
+                    </li>
+                    <li>
+                            <label for="input2">password </label>
+                            <input type="password" id="input2">
+                    </li>
+                    <li>
+                            <label for="input3">search </label>
+                            <input type="search" id="input3">
+                    </li>
+                    <li>
+                            <label for="input4">time </label>
+                            <input type="time" id="input4">
+                    </li>
+                    <li>
+                            <label for="input5">email </label>
+                            <input type="email" id="input5">
+                    </li>
+                    <li>
+                            <label for="input6">number </label>
+                            <input type="number" id="input6">
+                    </li>
+                    <li>
+                            <label for="input7">range </label>
+                            <input type="range" id="input7">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>라디오, 체크박스</legend>
+                <ul>
+                    <li>
+                        <label><input type="radio" name="subject" value="1"> </label>
+                    </li>
+                
+                
+                <li>
+                        <label><input type="radio" value="2">zzzz </label>
+                        <label><input type="radio"> </label>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                        <label><input type="checkbox" name="name1" value="3">c </label>
+                </li>
+                <li>
+                        <label><input type="checkbox" name="name2">d </label>
+                </li>
+                <li>
+                    <label><input type="color">색 까알</label>
+                </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>보내기</legend>
+                <label>텍스트<input type="text"></label>
+                <label><input type="submit" value="제출">submit</label>
+                <label><input type="reset" value="다시입력">reset</label>
+                <label><input type="image" src="">image</label>
+            </fieldset>
+        </form>
+        <h4>select</h4>
+        <select>
+            <optgroup label="select1">
+                <option value="1">select1-1</option>
+                <option value="2">select1-2</option>
+                <option value="3">select1-3</option>
+            </optgroup>
+            <optgroup label="select2">
+                    <option value="4">select2-1</option>
+                    <option value="5">select2-2</option>
+                    <option value="6">select2-3</option>
+            </optgroup>
+        </select>
+        <h4>datalist</h4>
+        <input type="text" list="dataid">
+            <datalist id="dataid">
+                    <option value="1" label="datalist1"></option>
+                    <option value="2" label="datalist2"></option>
+                    <option value="3" label="datalist3"></option>
+            </datalist>
+        <h4>textarea</h4>
+        <textarea name="hi" col="10" rows="5" >textarea입니다.</textarea>
+        <h4>button</h4>
+        <button type="submit">저언송</button>
+        <button type="reset">리이센</button>
+        <button type="button">버어튼</button>
+        <button type="menu">메에뉴</button> 
+        <h4>진행상태</h4>
+        <label>progress<progress value="50" max="70">pro</progress></label>
+        <label>meter<meter value="50" max="70">me</meter></label>
+        
+    </body>
+</html>
