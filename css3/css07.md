@@ -119,5 +119,5 @@
             - <img src="image/원그색상중지점.png">
             - ![원그색상중지점](/image/원그색상중지점.png)
         5. 그라데이션 반복
-            - ![그라데이션반복](/image/그라데이션반복.png)
+            - ![그라데이션반복a](/image/smallhjw.png)
 
