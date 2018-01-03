@@ -116,7 +116,7 @@
         3. 크기
             - <img src="image/원그크기.png">
         4. 색상중지점
-            - <img src="image/원그색상중지점.png">
+            - <img src="image/원그색상중지점.PNG">
             - ![원그색상중지점](/css3/image/원그색상중지점.PNG)
         5. 그라데이션 반복
             - ![그라데이션반복](/css3/image/그라데이션반복.PNG)
