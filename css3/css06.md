@@ -17,7 +17,7 @@
 * @font-face 속성
     - 웹 폰트 : 웹 문서 안에 글꼴 정보도 함께 저장했다가 사용자가 웹 문서에서 접속하면 글꼴을 사용자 시스템으로 다운로드시켜 사용하는 글꼴.
     - 사용자 시스템에 없는 글꼴이더라도 웹 제작자가 의도한 대로 텍스트를 표시할 수 있다.
-    - <img src="image/웹폰트파일사용법.png">
+    - <img src="image/웹폰트파일사용법.PNG">
 * font-size 속성
     - 글자 크기를 조절하는 속성
     - 사용할 수 있는 값: 절대 크기, 상대 크기, 숫자, 백분율
@@ -133,4 +133,4 @@
 
 * list-style 속성
     - type,position,image 를 한꺼번에 쓴다
-    - <img src="image/list-style.png">
+    - <img src="image/list-style.PNG">
