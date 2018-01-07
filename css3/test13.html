@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        div{
+            border: 3px solid #000;
+            width:200px;
+            height:150px;
+            margin:10px;
+            padding:10pt;
+            float:left;
+        }
+        .translate1{ 
+            transform:translateX(-10px);
+            background: blue;
+            }
+        .translate1:hover{ transform: translateX(100px);}
+        .translate2{
+            background:green;
+        }
+        .translate2:hover{
+            transform:translate3d(0px,0px,500px);
+            background:yellow;
+        }
+        .scale1:hover{
+            transform:scale(1.5);
+            background:purple;
+
+        }
+        .rotate1:hover{
+            transform:rotate(120deg);
+        }
+        .rotate2:hover{
+            transform:rotate3D(1,1,1,45deg);
+        }
+        .rotate3:hover{
+            transform:rotate3D(1,0,0,45deg);
+        }
+        .skew1:hover{
+            transform:skew(30deg,0deg)
+        }
+        .tr-style1{
+            width:300px;
+            height:250px;
+            background: lightcyan;
+            transform:rotateY(45deg);
+            transform-style:flat;
+        }
+        .tr-style1:hover{        
+            transform-style: preserve-3d;
+        }
+        .tr-style1 div{
+            width:100px;
+            height:100px;
+            transform:rotateX(45deg);
+        }
+        .transition1{
+            background:#00f;
+            transition-property: width, height, background;
+            transition-duration: 3s,5s,7s;
+            transition-timing-function:ease-in;
+            transition-delay: 1s;
+        }
+        .transition1:hover{
+            width:50px;
+            height:50px;
+            background: yellow;
+        }
+        .animation1{
+            animation-name: firstanimation;
+            animation-duration: 5s;
+            background: green;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: 4;
+        }
+        @keyframes firstanimation{
+            from{
+                background: #00f;
+            }
+            50%{
+                background: #fff;
+                transform: translateY(100px) rotateZ(720deg) scale(2);
+                border-radius: 50%;
+            }
+            to{
+                background: pink;
+                transform:translateY(50px) rotateZ(1440deg) scale(0.5);
+            }
+        }
+        
+        </style>
+        <title>test13</title>
+
+    </head>
+    <body>
+        <header><h1>test13 트랜스폼</h1></header>
+        <div class="translate1">translate 원래 위치에서 -10px 이동한 상태에서 원래위치에서100px 이동한 상태로 바뀐다.</div>
+        <div class="translate2"> translate  z방향 이동은 뭘까</div>
+        <div class="scale1">scale 1.5배</div>
+        <div class="rotate1">rotate 120도</div>
+        <div class="rotate2">rotate 3d 1,1,1,45deg</div>
+        <div class="rotate3">rotate 3d 1,0,0,45deg회전</div>
+        <div class="skew1">skew 30deg 0deg</div>
+        <div style="width:300px;height:300px;border:#00f;flow:left;perspective:200px;"><div class="tr-style1">rotate y 45deg<div>flat->3d rotatex 45deg</div></div></div>
+        <div class="transition1">transition</div>
+        <div class="animation1">animation</div>
+        <footer></footer>
+    </body>
+</html>
